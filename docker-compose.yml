@@ -1,0 +1,8 @@
+services:
+  lineage-workbench:
+    build: .
+    image: pipeline-lineage-workbench:1.0.0
+    container_name: pipeline-lineage-workbench
+    ports:
+      - "8080:80"
+    restart: unless-stopped
